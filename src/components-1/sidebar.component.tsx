@@ -11,10 +11,10 @@ const Sidebar = () => {
         </button>
 
         <div className={`sidebar ${open ? "open" : ""}`}>
-          <a href="#">Ämne</a>
-          <a href="#">Title</a>
-          <a href="#">Text</a>
-          <a href="#">Svårigheter</a>
+          <a href="#">Maths</a>
+          <a href="#">English</a>
+          <a href="#">History</a>
+          <a href="#">Science</a>
         </div>
       </div>
 

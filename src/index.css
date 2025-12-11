@@ -29,7 +29,7 @@ a:hover {
 }
 
 main {
-  height: 100vh;
+  min-height: 100dvh;
 }
 
 h1 {
@@ -115,13 +115,19 @@ button:focus-visible {
   display: block;
   padding: 12px 2px;
   margin: 30px;
-
   text-decoration: none;
-  color: white;
+  color: black;
+}
+.sidebar a:hover {
+  text-decoration: underline;
 }
 
 .content {
   padding: 40px;
+}
+
+.themeToggle {
+  margin-left: 20px;
 }
 
 /*** Dark/Light mode ***/
@@ -134,19 +140,17 @@ button:focus-visible {
 [data-theme="dark"] {
   --bg-color: #423d3d;
   --text-color: #ffffff;
-}
-
-body {
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  transition: 0.25s ease;
-}
-
-.themeToggle {
-  margin-left: 20px;
-}
-.sidebar {
-  background: rgba(255, 255, 255, 0.2);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  color: #213547;
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: 0.25s ease;
+  }
+  .sidebar {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #213547;
+  }
+  .sidebar a {
+    color: white;
+  }
 }

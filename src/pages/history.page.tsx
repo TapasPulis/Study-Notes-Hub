@@ -1,7 +1,7 @@
-import React from "react";
+import { historyNotes } from "../components-1/data";
 
 const HistoryPage = () => {
-  return <div>HistoryPage</div>;
+  return <div>{historyNotes.content}</div>;
 };
 
 export default HistoryPage;

@@ -1,7 +1,7 @@
-import React from "react";
+import { scienceNotes } from "../components-1/data";
 
 const SciencePage = () => {
-  return <div>SciencePage</div>;
+  return <div>{scienceNotes.content}</div>;
 };
 
 export default SciencePage;

@@ -1,26 +1,23 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
+import ThemeToggle from "./dark.light";
 
 const Sidebar = () => {
   const [open, setOpen] = useState<boolean>(false);
 
   return (
     <>
-      <div className="app">
-        <button className="toggle-btn" onClick={() => setOpen(!open)}>
-          MENU
-        </button>
-
-        <div className={`sidebar ${open ? "open" : ""}`}>
-          <a href="#">Maths</a>
-          <a href="#">English</a>
-          <a href="#">History</a>
-          <a href="#">Science</a>
-        </div>
-      </div>
-
-      <div className="content">
-        <h1>Information</h1>
-      </div>
+      <header className="navbar">
+        <button onClick={() => setOpen(!open)}>MENU</button>
+        <nav className={`sidebar ${open ? "open" : ""}`}>
+          <Link to="/">Home</Link>
+          <Link to="/maths">Maths</Link>
+          <Link to="/english">English</Link>
+          <Link to="/history">History</Link>
+          <Link to="/science">Science</Link>
+          <ThemeToggle />
+        </nav>
+      </header>
     </>
   );
 };

@@ -1,7 +1,11 @@
-import React from "react";
+import { mathNotes } from "../components-1/data";
 
 const MathsPage = () => {
-  return <div>MathsPage</div>;
+  return (
+    <div>
+      <p>{mathNotes.content}</p>
+    </div>
+  );
 };
 
 export default MathsPage;

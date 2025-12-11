@@ -9,36 +9,33 @@ export const mathNotes: Note = {
   subject: "Math",
   title: "Math Notes",
   content: `
-        <h1>Mathematics Study Notes</h1>
+        Mathematics Study Notes
 
-        <h2>1. Numbers & Operations</h2>
-        <ul>
-            <li>Natural Numbers: 1, 2, 3, ...</li>
-            <li>Whole Numbers: 0, 1, 2, 3, ...</li>
-            <li>Integers: ... -3, -2, -1, 0, 1 ...</li>
-            <li>Rational Numbers: can be written as a fraction</li>
-            <li>Irrational Numbers: cannot be written as a fraction (π, √2)</li>
-            <li>Real Numbers: rational + irrational numbers</li>
-        </ul>   
-
-        <h2>2. Algebra</h2>
-        <h3>Algebraic Expressions</h3>
-        <ul>
-            <li>Term: number, variable, or product (e.g., 3x)</li>
-            <li>Coefficient: number multiplying a variable</li>
-            <li>Constant: number with no variable</li>
+        1. Numbers & Operations
+        - Natural Numbers: 1, 2, 3, ...
+        - Whole Numbers: 0, 1, 2, 3, ...
+        - Integers: ... -3, -2, -1, 0, 1 ...
+        - Rational Numbers: can be written as a fraction
+        - Irrational Numbers: cannot be written as a fraction (π, √2)
+        - Real Numbers: rational + irrational numbers
         </ul>
-         
-        <h2>3. Trigonometry</h2>
-        <ul>
-            <li>sin θ = opposite / hypotenuse</li>
-            <li>cos θ = adjacent / hypotenuse</li>
-            <li>tan θ = opposite / adjacent</li>
+
+        2. Algebra
+        Algebraic Expressions
+        - Term: number, variable, or product (e.g., 3x)
+            - Coefficient: number multiplying a variable
+            - Constant: number with no variable
+        </ul>
+
+        3. Trigonometry
+        - sin θ = opposite / hypotenuse
+        - cos θ = adjacent / hypotenuse
+        - tan θ = opposite / adjacent
         </ul>`,
   difficulty: "hard",
 };
 
-const englishNotes: Note = {
+export const englishNotes: Note = {
   subject: "English",
   title: "English Notes",
   content: `<h1>English Study Notes</h1>
@@ -74,7 +71,7 @@ const englishNotes: Note = {
         </ul>`,
   difficulty: "easy",
 };
-const historyNotes: Note = {
+export const historyNotes: Note = {
   subject: "History",
   title: "History Notes",
   content: ` 
@@ -112,7 +109,7 @@ const historyNotes: Note = {
   difficulty: "normal",
 };
 
-const scienceNotes: Note = {
+export const scienceNotes: Note = {
   subject: "Science",
   title: "Science Notes",
   content: ` 

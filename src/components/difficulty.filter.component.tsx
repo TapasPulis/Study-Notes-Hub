@@ -4,6 +4,10 @@ import { notes } from "./data";
 const DifficultyFilter = () => {
   const [selectedDifficulty, setSelectedDifficulty] = useState<string>("");
 
+  const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+    setSelectedDifficulty(event.target.value);
+  };
+
   const filterNotes =
     selectedDifficulty === ""
       ? []
@@ -20,7 +24,7 @@ const DifficultyFilter = () => {
       <br />
       <select
         name="difficulty"
-        onChange={(event) => setSelectedDifficulty(event.target.value)}
+        onChange={handleChange}
         defaultValue="placeholder"
       >
         <option value="placeholder" disabled>
@@ -34,12 +38,18 @@ const DifficultyFilter = () => {
       {selectedDifficulty &&
         (filterNotes.length === 0 ? (
           <>
+            <p>
+              Showing {filterNotes.length} of {notes.length} notes
+            </p>
             <h3>Notes for {selectedDifficulty} level:</h3>
             <p>Sorry. There are no notes that match this difficulty</p>
           </>
         ) : (
           filterNotes.map((note) => (
             <>
+              <p>
+                Showing {filterNotes.length} of {notes.length} notes
+              </p>
               <h3>Notes for {selectedDifficulty} level:</h3>
               <div key={note.title}>{note.content}</div>
             </>

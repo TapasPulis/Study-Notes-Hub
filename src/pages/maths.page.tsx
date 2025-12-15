@@ -1,4 +1,4 @@
-import { notes } from "../components-1/data";
+import { notes } from "../components/data";
 const MathsPage = () => {
   const mathNotes = notes.filter((note) => note.subject === "Maths");
   return (

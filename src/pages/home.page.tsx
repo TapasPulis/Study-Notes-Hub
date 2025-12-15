@@ -1,4 +1,4 @@
-import DifficultyFilter from "../components-1/difficulty.filter.component";
+import DifficultyFilter from "../components/difficulty.filter.component";
 
 const HomePage = () => {
   return (

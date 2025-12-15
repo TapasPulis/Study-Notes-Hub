@@ -1,6 +1,10 @@
 import { useEffect, useState } from "react";
 
-const BackToTop = () => {
+const BackToTop = ({
+  topRef,
+}: {
+  topRef: React.RefObject<HTMLDivElement | null>; // This a prop created to receive the ref from the layout
+}) => {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
@@ -20,10 +24,9 @@ const BackToTop = () => {
   }, []);
 
   const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
+    if (topRef.current) {
+      topRef.current.scrollIntoView({ behavior: "smooth" }); // If the ref is not null, scroll to the top smoothly
+    }
   };
   return (
     <>

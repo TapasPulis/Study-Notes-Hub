@@ -1,4 +1,4 @@
-import { notes } from "../components-1/data";
+import { notes } from "../components/data";
 
 const HistoryPage = () => {
   const historyNotes = notes.filter((note) => note.subject === "History");

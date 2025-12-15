@@ -33,10 +33,16 @@ const DifficultyFilter = () => {
 
       {selectedDifficulty &&
         (filterNotes.length === 0 ? (
-          <p>Sorry. There are no notes that match this difficulty</p>
+          <>
+            <h3>Notes for {selectedDifficulty} level:</h3>
+            <p>Sorry. There are no notes that match this difficulty</p>
+          </>
         ) : (
           filterNotes.map((note) => (
-            <div key={note.title}>{note.content}</div>
+            <>
+              <h3>Notes for {selectedDifficulty} level:</h3>
+              <div key={note.title}>{note.content}</div>
+            </>
           )) /* If a difficulty is selected we check if the filterNotes array is empty
       if it is then that means that there were no difficulty matches. If the array isn't empty 
       then there were difficulty matches so map through the filterNotes array to render them*/

@@ -82,7 +82,7 @@ const AddNotes = () => {
         <br />
         <button type="submit">Add Note</button>
       </form>
-      <h3>Newly Added Notes:</h3>
+      {filterNewNote.length > 0 && <h3>Newly Added Notes:</h3>}
       <ul>
         {filterNewNote.map((note) => (
           <li key={note.id}>

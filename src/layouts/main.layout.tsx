@@ -2,7 +2,6 @@ import { Outlet } from "react-router-dom";
 import Sidebar from "../components/sidebar.component";
 import BackToTop from "../components/back.to.top.component";
 import { useRef } from "react";
-import SubjectSearch from "../components/search.notes";
 
 const MainLayout = () => {
   const topRef = useRef<HTMLDivElement | null>(null);
@@ -14,7 +13,6 @@ const MainLayout = () => {
         <Outlet />
       </main>
       <BackToTop topRef={topRef} /> {/* Passing the ref as a prop*/}
-      <SubjectSearch />
     </div>
   );
 };

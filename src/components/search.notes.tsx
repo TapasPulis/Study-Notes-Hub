@@ -27,6 +27,7 @@ const SubjectSearch = () => {
 
   return (
     <div>
+      <h3>Search for the subject:</h3>
       <input
         type="text"
         placeholder="Search subjects..."

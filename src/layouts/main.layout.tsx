@@ -3,7 +3,6 @@ import Sidebar from "../components/sidebar.component";
 import BackToTop from "../components/back.to.top.component";
 import { useRef } from "react";
 import SubjectSearch from "../components/search.notes";
-import AddNotes from "../components/add.notes.component";
 
 const MainLayout = () => {
   const topRef = useRef<HTMLDivElement | null>(null);
@@ -13,7 +12,6 @@ const MainLayout = () => {
       <Sidebar />
       <main>
         <Outlet />
-        <AddNotes />
       </main>
       <BackToTop topRef={topRef} /> {/* Passing the ref as a prop*/}
       <SubjectSearch />

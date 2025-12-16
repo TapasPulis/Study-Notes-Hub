@@ -9,6 +9,8 @@ export default function ThemeToggle() {
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
     localStorage.setItem("theme", theme);
+
+    document.title = `Theme: ${theme}`;
   }, [theme]);
 
   const toggleTheme = () => {

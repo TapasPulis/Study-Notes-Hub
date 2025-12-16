@@ -1,6 +1,7 @@
 import type { JSX } from "react";
 
-type Note = {
+export type Note = {
+  id: number;
   subject: string;
   title: string;
   content: JSX.Element;
@@ -9,6 +10,7 @@ type Note = {
 
 export const notes: Note[] = [
   {
+    id: 1,
     subject: "Maths",
     title: "Maths Notes",
     content: (
@@ -45,6 +47,7 @@ export const notes: Note[] = [
     difficulty: "hard",
   },
   {
+    id: 2,
     subject: "English",
     title: "English Notes",
     content: (
@@ -92,6 +95,7 @@ export const notes: Note[] = [
     difficulty: "easy",
   },
   {
+    id: 3,
     subject: "History",
     title: "History Notes",
     content: (
@@ -141,6 +145,7 @@ export const notes: Note[] = [
     difficulty: "normal",
   },
   {
+    id: 4,
     subject: "Science",
     title: "Science Notes",
     content: (

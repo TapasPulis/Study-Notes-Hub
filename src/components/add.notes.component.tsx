@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import { notes } from "./data";
+import React, { useState, useContext } from "react";
 import type { Note } from "./data";
+import { SavedNotesContext } from "./saved.notes.context";
 
 const AddNotes = () => {
   const [notesList, setNotesList] = useState<Note[]>([]);
@@ -8,17 +8,24 @@ const AddNotes = () => {
   const [subject, setSubject] = useState<string>("");
   const [content, setContent] = useState<string>("");
   const [difficulty, setDifficulty] = useState<string>("");
+  const savedNotesContext = useContext(SavedNotesContext);
+
+  if (!savedNotesContext) {
+    return null;
+  }
+  const { dispatch } = savedNotesContext;
 
   const onSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const note: Note = {
-      id: notes.length + 1,
+      id: notesList.length + 1,
       subject,
       title,
       content: <p>{content}</p>,
       difficulty,
     };
-    setNotesList([...notes, note]);
+    setNotesList((prevNotes) => [...prevNotes, note]);
+    dispatch({ type: "SAVE_NOTE", payload: note });
   };
 
   const handleSubjectChange = (event: React.ChangeEvent<HTMLInputElement>) => {

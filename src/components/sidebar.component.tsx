@@ -15,6 +15,7 @@ const Sidebar = () => {
           <Link to="/english">English</Link>
           <Link to="/history">History</Link>
           <Link to="/science">Science</Link>
+          <Link to="/saved-notes">Saved Notes</Link>
           <ThemeToggle />
         </nav>
       </header>

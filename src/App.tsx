@@ -6,6 +6,7 @@ import MathsPage from "./pages/maths.page";
 import EnglishPage from "./pages/english.page";
 import HistoryPage from "./pages/history.page";
 import SciencePage from "./pages/science.page";
+import SavedNotesPage from "./pages/saved.notes.page";
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
           <Route path="/english" element={<EnglishPage />} />
           <Route path="/history" element={<HistoryPage />} />
           <Route path="/science" element={<SciencePage />} />
+          <Route path="/saved-notes" element={<SavedNotesPage />} />
         </Route>
       </Routes>
     </>

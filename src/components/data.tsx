@@ -26,7 +26,7 @@ export const notes: Note[] = [
           <li>Irrational Numbers: cannot be written as a fraction (π, √2)</li>
           <li>Real Numbers: rational + irrational numbers</li>
         </ul>
-
+        <br />
         <h2>2. Algebra</h2>
         <p>Algebraic Expressions</p>
         <ul>
@@ -34,13 +34,14 @@ export const notes: Note[] = [
           <li>Coefficient: number multiplying a variable</li>
           <li>Constant: number with no variable</li>
         </ul>
-
+        <br />
         <h2>3. Trigonometry</h2>
         <ul>
           <li>sin θ = opposite / hypotenuse</li>
           <li>cos θ = adjacent / hypotenuse</li>
           <li>tan θ = opposite / adjacent</li>
         </ul>
+        <br />
       </>
     ),
 
@@ -68,7 +69,7 @@ export const notes: Note[] = [
           <li>Conjunction: connects words or phrases (e.g., and, but, or)</li>
           <li>Interjection: expresses emotion (e.g., wow!, oh!)</li>
         </ul>
-
+        <br />
         <h2>2. Sentence Structure</h2>
         <ul>
           <li>Simple Sentence: one independent clause</li>
@@ -78,7 +79,7 @@ export const notes: Note[] = [
           <li>Complex Sentence: independent + dependent clause</li>
           <li>Compound-Complex: two independent + one dependent clause</li>
         </ul>
-
+        <br />
         <h2>3. Figures of Speech</h2>
         <ul>
           <li>
@@ -90,6 +91,7 @@ export const notes: Note[] = [
           <li>Alliteration: repeated consonant sounds</li>
           <li>Onomatopoeia: sound words (e.g., buzz, bang)</li>
         </ul>
+        <br />
       </>
     ),
     difficulty: "easy",
@@ -111,7 +113,7 @@ export const notes: Note[] = [
           </li>
           <li>Provides lessons to avoid repeating past mistakes.</li>
         </ul>
-
+        <br />
         <h2>2. Ancient Civilizations</h2>
         <ul>
           <li>
@@ -127,19 +129,20 @@ export const notes: Note[] = [
           </li>
           <li>Ancient Rome: Republic → Empire; law, architecture, roads.</li>
         </ul>
-
+        <br />
         <h2>3. Sources of History</h2>
         <h3>Primary Sources</h3>
         <ul>
           <li>First-hand accounts from the time period.</li>
           <li>Examples: letters, diaries, photographs, official documents.</li>
         </ul>
-
+        <br />
         <h3>Secondary Sources</h3>
         <ul>
           <li>Interpretations based on primary sources.</li>
           <li>Examples: textbooks, articles, documentaries.</li>
         </ul>
+        <br />
       </>
     ),
     difficulty: "normal",
@@ -151,7 +154,6 @@ export const notes: Note[] = [
     content: (
       <>
         <h1>Science Study Notes</h1>
-
         <h2>1. Branches of Science</h2>
         <ul>
           <li>Physics: study of matter, energy, motion, and forces.</li>
@@ -162,14 +164,14 @@ export const notes: Note[] = [
           <li>Earth Science: study of Earth, its structure, and processes.</li>
           <li>Environmental Science: study of ecosystems and human impact.</li>
         </ul>
-
+        <br />
         <h2>2. Physics Basics</h2>
         <h3>Matter</h3>
         <ul>
           <li>Anything that has mass and occupies space.</li>
           <li>States of matter: solid, liquid, gas, plasma.</li>
         </ul>
-
+        <br />
         <h3>Force & Motion</h3>
         <ul>
           <li>Force: a push or pull.</li>
@@ -184,14 +186,14 @@ export const notes: Note[] = [
           <li>Speed = distance / time.</li>
           <li>Velocity: speed with direction.</li>
         </ul>
-
+        <br />
         <h3>Energy</h3>
         <ul>
           <li>Kinetic Energy: energy of motion.</li>
           <li>Potential Energy: stored energy.</li>
           <li>Energy cannot be created or destroyed—only transformed.</li>
         </ul>
-
+        <br />
         <h2>3. Chemistry Basics</h2>
         <h3>Atoms & Elements</h3>
         <ul>
@@ -200,13 +202,13 @@ export const notes: Note[] = [
           <li>Element: substance made of one type of atom.</li>
           <li>Periodic Table: organizes elements by atomic number.</li>
         </ul>
-
+        <br />
         <h3>Compounds & Mixtures</h3>
         <ul>
           <li>Compound: two or more elements chemically bonded (H₂O).</li>
           <li>Mixture: substances physically combined (air, saltwater).</li>
         </ul>
-
+        <br />
         <h3>Chemical Reactions</h3>
         <ul>
           <li>Reactants → Products.</li>
@@ -215,7 +217,7 @@ export const notes: Note[] = [
             Law of Conservation of Mass: matter is not created or destroyed.
           </li>
         </ul>
-
+        <br />
         <h2>4. Biology Basics</h2>
         <h3>Cell Theory</h3>
         <ul>
@@ -223,6 +225,7 @@ export const notes: Note[] = [
           <li>Cells are the basic unit of life.</li>
           <li>Cells come from pre-existing cells.</li>
         </ul>
+        <br />
       </>
     ),
     difficulty: "hard",

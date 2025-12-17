@@ -2,9 +2,7 @@ import { notes } from "../components/data";
 const MathsPage = () => {
   const mathNotes = notes.filter((note) => note.subject === "Maths");
   return (
-    <div>
-      <h3>Maths Notes:</h3>
-      <br />
+    <div id="mathsPageContainer">
       {mathNotes.map((note) => (
         <div key={note.title}>{note.content}</div>
       ))}

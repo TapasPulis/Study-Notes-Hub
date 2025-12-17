@@ -50,7 +50,8 @@ const AddNotes = () => {
   );
 
   return (
-    <div>
+    <div id="addNotesContainer">
+      <h2>Add a New Note</h2>
       <form onSubmit={onSubmit}>
         <label htmlFor="subject">Subject: </label>
         <input

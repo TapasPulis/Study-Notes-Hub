@@ -19,8 +19,8 @@ const DifficultyFilter = () => {
         If the difficulties don't match it just returns an empty array.*/
 
   return (
-    <div>
-      <label>Filter by difficulty:</label>
+    <div id="difficultyFilterContainer">
+      <label id="difficultyLabel">Filter by difficulty:</label>
       <br />
       <select
         name="difficulty"
@@ -41,7 +41,7 @@ const DifficultyFilter = () => {
             <p>
               Showing {filterNotes.length} of {notes.length} notes
             </p>
-            <h3>Notes for {selectedDifficulty} level:</h3>
+            <h2>Notes for {selectedDifficulty} level:</h2>
             <p>Sorry. There are no notes that match this difficulty</p>
           </>
         ) : (
@@ -49,7 +49,7 @@ const DifficultyFilter = () => {
             <p>
               Showing {filterNotes.length} of {notes.length} notes
             </p>
-            <h3>Notes for {selectedDifficulty} level:</h3>
+            <h2>Notes for {selectedDifficulty} level:</h2>
             {filterNotes.map((note) => (
               <div key={note.id}>{note.content}</div>
             ))}

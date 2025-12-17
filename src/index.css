@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Roboto+Condensed:wght@400;700&display=swap");
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -18,7 +20,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+body {
+  font-family: "Roboto ", sans-serif;
+}
 a {
   font-weight: 500;
   color: #646cff;
@@ -34,7 +38,6 @@ main {
 
 h1 {
   font-size: 3.2em;
-  line-height: 1.1;
 }
 
 button {
@@ -124,6 +127,124 @@ button:focus-visible {
   margin-left: 20px;
 }
 
+/*** Home Page styling ***/
+
+#homePageContainer {
+  text-align: center;
+  margin-top: 50px;
+}
+
+/*! Difficulty Filter Styling */
+#difficultyFilterContainer {
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+#difficultyLabel {
+  font-size: 18px;
+}
+select {
+  padding: 7px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  margin-bottom: px;
+}
+
+/*! Search Notes Component Styling */
+#searchNotesContainer {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+#searchNotesContainer h2 {
+  margin-bottom: 15px;
+}
+#searchNotesContainer input {
+  padding: 7px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  width: 300px;
+}
+#searchNotesContainer p {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+/*! Add Notes Component Styling */
+#addNotesContainer {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+#addNotesContainer h2 {
+  margin-bottom: 15px;
+}
+#addNotesContainer label {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+#addNotesContainer input,
+textarea {
+  padding: 3px;
+  margin-bottom: 25px;
+  resize: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid black;
+  background: transparent;
+  width: 300px;
+  outline: none;
+  font-size: 18px;
+}
+#addNotesContainer button {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  padding: 10px 20px;
+  font-size: 18px;
+}
+
+/*** Maths page styling***/
+#mathsPageContainer {
+  text-align: center;
+  margin-top: 50px;
+}
+
+/*** English page styling***/
+#englishPageContainer {
+  text-align: center;
+  margin-top: 50px;
+}
+
+/*** History page styling***/
+#historyPageContainer {
+  text-align: center;
+  margin-top: 50px;
+}
+
+/*** Science page styling***/
+#sciencePageContainer {
+  text-align: center;
+  margin-top: 50px;
+}
+
+/*** Saved Notes page styling***/
+#savedNotesPageContainer {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#savedNote {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin: 20px auto;
+  max-width: 600px;
+  text-align: left;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
 /*** Dark/Light mode ***/
 
 :root {
@@ -134,17 +255,27 @@ button:focus-visible {
 [data-theme="dark"] {
   --bg-color: #423d3d;
   --text-color: #ffffff;
-  body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    transition: 0.25s ease;
-  }
-  .sidebar {
-    background: rgba(255, 255, 255, 0.2);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    color: #213547;
-  }
-  .sidebar a {
-    color: white;
-  }
+}
+[data-theme="dark"] body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: 0.25s ease;
+}
+
+[data-theme="dark"].sidebar {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #213547;
+}
+[data-theme="dark"] .sidebar a {
+  color: white;
+}
+[data-theme="dark"] #savedNote {
+  background-color: #2c2c2c;
+  border: 1px solid #555;
+}
+[data-theme="dark"] #addNotesContainer input,
+[data-theme="dark"] #addNotesContainer textarea {
+  border-bottom: 2px solid #ffffff;
+  color: white;
 }

@@ -26,8 +26,8 @@ const SubjectSearch = () => {
   const SelectedComponent = match?.Component ?? null;
 
   return (
-    <div>
-      <h3>Search for the subject:</h3>
+    <div id="searchNotesContainer">
+      <h2>Search for the subject:</h2>
       <input
         type="text"
         placeholder="Search subjects..."

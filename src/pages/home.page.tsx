@@ -4,12 +4,13 @@ import SubjectSearch from "../components/search.notes";
 
 const HomePage = () => {
   return (
-    <div>
+    <div id="homePageContainer">
       <h1>Welcome to the Study Notes Hub!</h1>
       <DifficultyFilter />
-      <AddNotes />
-      <br />
+      <hr />
       <SubjectSearch />
+      <hr />
+      <AddNotes />
     </div>
   );
 };

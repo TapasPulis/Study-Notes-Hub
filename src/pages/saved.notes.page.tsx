@@ -12,13 +12,13 @@ const SavedNotesPage = () => {
   }
 
   return (
-    <div>
+    <div id="savedNotesPageContainer">
       <h2>Saved Notes</h2>
 
       <p>Showing {state.savedNotes.length} saved notes</p>
 
       {state.savedNotes.map((note) => (
-        <div key={note.id}>
+        <div id="savedNote" key={note.id}>
           <h4>{note.title}</h4>
           {note.content}
 
